@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 		
+	//Locator repository for login page
 	WebDriver driver;
 	
 	@FindBy(xpath="//input[@name='username']")
