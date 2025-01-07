@@ -18,7 +18,7 @@ public class LoginPage {
 	@FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
 	private WebElement LoginBtn;
 	
-	@FindBy(xpath="//h6[text()='Dashboard1']")
+	@FindBy(xpath="//h6[text()='Dashboard']")
 	private WebElement DashboardHeading;
 	
 	@FindBy(xpath="//p[text()='Invalid credentials']")
