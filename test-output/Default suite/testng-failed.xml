@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orangehrm.testcases.Login">
+      <class name="com.orangehrm.testcases.PIMEmployeeListTestCases">
         <methods>
+          <include name="verifySearchWithValidEmployeeStatus"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLoginWithInvalidCredential" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.orangehrm.testcases.Login -->
+      </class> <!-- com.orangehrm.testcases.PIMEmployeeListTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
