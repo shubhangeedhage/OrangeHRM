@@ -149,5 +149,33 @@ public class PIMEmployeeListTestCases extends Base{
 		Thread.sleep(5000);
 		
 		Assert.assertEquals(pimEmployeeListPage.returnEmployeeSubUnit(), expectedSubunit);
+	}	
+	
+	@Test
+	public void verifyResetButtonFunctionality() throws InterruptedException
+	{
+		pimEmployeeListPage.enterEmployeeName("abcdef");
+		pimEmployeeListPage.enterEmployeeID("9876");
+		Thread.sleep(4000);
+		pimEmployeeListPage.clickOnResetButton();
+		Assert.assertTrue(pimEmployeeListPage.returnEnteredEmployeeName().equals(""));
+		Assert.assertTrue(pimEmployeeListPage.returnEnteredEmployeeID().equals(""));
 	}
+	
+	@Test
+	public void verifyAddEmployeeButtonFunctionality() throws InterruptedException
+	{
+		pimEmployeeListPage.clickOnAddButton();
+		Thread.sleep(2000);
+		String expectedHeading="Add Employee";
+		Assert.assertTrue(pimEmployeeListPage.returnAddEmployeeHeading().equals(expectedHeading));
+	}
+	
+	@Test
+	public void verifyEditAndDeleteActionsAreAvailableForAllTheRecords()
+	{
+		Assert.assertTrue(pimEmployeeListPage.returnEditAndDeleteActionsAreDisplayedForAllRecords());
+	}
+	
+	
 }
