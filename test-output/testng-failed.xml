@@ -5,8 +5,8 @@
     <classes>
       <class name="com.orangehrm.testcases.PIMEmployeeListTestCases">
         <methods>
-          <include name="verifySearchWithValidEmployeeStatus"/>
           <include name="tearDown"/>
+          <include name="verifyResetFunctionality"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.orangehrm.testcases.PIMEmployeeListTestCases -->
